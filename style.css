@@ -1,0 +1,226 @@
+:root{
+    --cor-principal: rgba(45, 134, 223, 0.836);
+}
+.container {
+    background: linear-gradient(white, rgba(89, 207, 236, 0.692));
+    margin: 0px;
+    height: auto;
+    width: auto;
+    display: grid;
+    grid-gap: 1px 1px;
+    grid-template-areas:
+        "topo topo topo topo topo topo"
+        "centro centro centro centro aside aside"
+        "centro centro centro centro aside aside"
+        "fim fim fim fim fim fim";
+
+}
+
+.topo {
+    grid-area: topo;
+    background-color: var(--cor-principal);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 20px;
+    height: 100px;
+}
+
+header{
+    display: flex;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo h1 {
+    margin-top: 10px;
+    margin-right: -100px;
+    padding: 20px;
+    font-style: italic;
+    font-family: cursive;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.logo img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 33px;
+
+}
+
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    text-decoration: none;
+    margin-right: -20px;
+    color: black;
+}
+.cabecalho-menu{
+    display: none;
+    height: 10px;
+    width: 10px;
+}
+
+.menu1 {
+    display:flex;
+    list-style-type: none;
+    margin-left: 500px;
+
+}
+.menu a {
+    text-decoration: none;
+    margin: 20px;
+    font-size: 25px;
+    color: white;
+    border-radius: 10px;
+    background-color: black;
+
+}
+.menu li:hover>a {
+    background-color: blue;
+    color: #FFF;
+
+}
+.submenu {
+    padding-top: 5px;
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    text-decoration: none;
+    justify-content:center;
+    align-items: center;
+}
+
+.submenu a {
+    margin: 5px;
+    color: white;
+    border-radius: 10px;
+    background-color: black;
+    border-radius: 10px;
+}
+.menu li:hover>.submenu {
+    display: flex;
+    flex-direction: column;
+}
+.submenu li:hover>a {
+    background-color: blue;
+    color: #FFF;
+}
+
+.centro {
+    grid-area: centro;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.centro-conteudo h1 {
+    font-size: 50px;
+    margin-top: -30px;
+}
+
+.centro-conteudo p {
+    font-size: 20px;
+}
+
+.aside {
+    grid-area: aside;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.aside li {
+    list-style-type: none;
+    color: black;
+    justify-content: center;
+    
+}
+.aside li a {
+    text-decoration: none;
+    background-color: black;
+    color: #FFF;
+    font-size: 30px;
+}
+.aside li:hover>a {
+    background-color: blue;
+    color: #FFF;
+}
+
+.aside-imagem img {
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 30px;
+}
+.aside-imagem2 {
+    justify-content: center;
+    margin-left: 90px;
+}
+.aside p2 {
+    justify-content: center;
+    margin-left: 115px;
+}
+
+.fim {
+    grid-area: fim;
+    background-color: var(--cor-principal);
+    border-radius: 20px;
+    display: flex;
+}
+
+.fim footer {
+    padding: 0px 100px;
+    margin: 0px 100px;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+    justify-content: center;
+}
+@media (min-width:768px) and (max-width:1024px) {
+    .container {
+        margin: auto;
+        max-width: 1024px;
+    }
+    header{
+        display: flex;
+        margin-top: 20px;
+    }
+    .menu {
+        margin-top: 100px;
+        width: 1px;
+        height: 1px;
+        object-fit: contain;
+    
+    }
+    .menu1 {
+        display: none;
+    }
+
+    .cabecalho-menu {
+        display: block;
+        
+    }
+    .cabecalho-menu img {
+        height: 100px;
+        width: 100px;
+        justify-content: end;
+        align-items: center;
+        margin-left: 300px;
+        margin-top: -50px;
+    }
+}
