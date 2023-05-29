@@ -1,0 +1,156 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    th {
+        background-color: rgba(31, 134, 236, 0.459);
+    }
+</style>
+<div class="container">
+
+    <body>
+        <div class="topo">
+            <header>
+                <div class="logo">
+                    <img src="assets/imagens/nossasenhoresdelourdes.png" alt="Imagem de Nossa Senhora de Lourdes"
+                        width="85" height="110">
+                    <h1>Paróquia<br> Nossa Senhora<br> de Lourdes</h1>
+
+                </div>
+                <div class="menu">
+                    <div class="cabecalho-menu" width="10" height="10">
+                        <img src="menu.png">
+                    </div>
+                    <nav>
+                        <ul class="menu1">
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="Detalhes.html">Detalhes</a></li>
+                            <li><a href="Autor.html">Autor</a></li>
+                            <li><a href="adm.html">Administrador</a></li>
+                        </ul>
+                    </nav>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+            </header>
+        </div>
+        <div class="style centro">
+            <div class="style-centro centro-conteudo">
+                <main>
+                    <article>
+                       
+                        <h1>Liturgia Diária</h1>
+                    </article>
+                    <section>
+                        <form action="/action_page.php">
+                            <label for="Nome">Composição:</label>
+                            <input type="text" id="Composição" name="Composição"><br>
+                            <br>
+                            <label for="Nome">Cor da Capa:</label>
+                            <input type="text" id="Cor da Capa" name="Cor da Capa"><br>
+                            <br>
+                            <label for="Comunidade">Tamanho:</label>
+                            <select id="Tamanho" name="Tamanho">
+                                <option value="Pequena">Pequena</option>
+                                <option value="Média">Média</option>
+                                <option value="Grande">Grande</option>
+                                <br>
+                            </select>
+                            <br>
+                            <br>
+                            <label for="Nome">Período:</label>
+                            <input type="radio" id="Semanal" name="Período" value="Semanal">
+                            <label for="Semanal">Semanal</label>
+                            <input type="radio" id="Mensal" name="Período" value="Mensal">
+                            <label for="Mensal">Mensal</label>
+                            <input type="radio" id="Anual" name="Perído" value="Anual">
+                            <label for="Anual">Anual</label><br>
+                            <br>
+                            <label for="Nome">Preço:</label>
+                            <input type="text" id="Preço" name="Preço"><br>
+                            <br>
+                            <input type="submit" value="Enviar">
+                            <br>
+                        </form>
+                        <br>
+                    
+                        <br>
+                        <table style="width:100%">
+
+                            <tr>
+                                <th>ID</th>
+                                <th>Composição</th>
+                                <th>Cor da Capa</th>
+                                <th>Tamanho</th>
+                                <th>Período</th>
+                                <th>Preço</th>
+                                <th>Editar</th>
+                                <th>Apagar</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Completa</td>
+                                <td>Vermelha</td>
+                                <td>Média</td>
+                                <td>Mensal</td>
+                                <td>R$20,00</td>
+                                <td><button class="edit-btn">Editar</button></td>
+                                <td><button class="edit-btn">Apagar</button></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Simples</td>
+                                <td>Verde</td>
+                                <td>Pequena</td>
+                                <td>Semanal</td>
+                                <td>R$5,00</td>
+                                <td><button class="edit-btn">Editar</button></td>
+                                <td><button class="edit-btn">Apagar</button></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Completa</td>
+                                <td>Azul</td>
+                                <td>Grande</td>
+                                <td>Anual</td>
+                                <td>R$80,00</td>
+                                <td><button class="edit-btn">Editar</button></td>
+                                <td><button class="edit-btn">Apagar</button></td>
+                            </tr>
+                        </table>
+
+                    </section>
+
+                </main>
+            </div>
+        </div>
+        <br>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="style fim">
+            <footer>
+                <p> <b>Maria Audeires de Lima Silva</b></p>
+                <a href="Autor.html">Sobre o autor</a>
+            </footer>
+        </div>
+    </body>
+</div>
+
+</html>
